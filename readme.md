@@ -13,9 +13,9 @@ For all projects you should have your `prettier.config.js` (it must end in `.js`
 ```javascript
 // prettier.config.js
 
-const config = require('code-style/prettier');
+const { prettier } = require('code-style');
 
-module.exports = config;
+module.exports = prettier;
 ```
 
 #### Dependencies
@@ -39,7 +39,8 @@ All configurations require the following dependencies:
 ```javascript
 // .eslintrc.js
 
-const { base } = require('code-style/eslint');
+const { eslint } = require('code-style/eslint');
+const { base } = eslint;
 
 module.exports = base;
 ```
@@ -53,7 +54,8 @@ No extra dependencies other than the base ones.
 ```javascript
 // .eslintrc.js
 
-const { typeScript } = require('code-style/eslint');
+const { eslint } = require('code-style');
+const { typeScript } = eslint;
 
 module.exports = typeScript;
 ```
@@ -70,7 +72,8 @@ _Note: there is no JavaScript and React config._
 ```javascript
 // .eslintrc.js
 
-const { tsx } = require('code-style/eslint');
+const { eslint } = require('code-style');
+const { tsx } = eslint;
 
 module.exports = tsx;
 ```

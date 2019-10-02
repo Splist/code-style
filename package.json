@@ -10,7 +10,7 @@
         "prettier": "^1.18.2"
     },
     "license": "Apache-2.0",
-    "main": "./src/eslint/index.js",
+    "main": "./src/index.js",
     "name": "code-style",
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "^2.3.1",
@@ -22,10 +22,10 @@
         "prettier": "^1.18.2"
     },
     "scripts": {
-        "autofix": "npm run lint --fix; npm run check-formatting --write",
+        "autofix": "npm run lint -- --fix; npm run check-formatting -- --write",
         "build": "tsc",
         "check-formatting": "prettier --ignore-path .gitignore --check \"./**/*.{{j,t}{s,sx},flow,{{sc,c},le}ss,json,m{d,dx},{y,ya}ml}\"",
         "lint": "eslint --ignore-path .gitignore ./**/*.js"
     },
-    "version": "1.0.0"
+    "version": "1.0.1"
 }

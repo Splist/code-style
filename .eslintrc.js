@@ -1,3 +1,4 @@
-const config = require('./src/eslint/index');
+const { eslint } = require('./src/index');
+const { base } = eslint;
 
-module.exports = config.base;
+module.exports = base;

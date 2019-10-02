@@ -1,5 +1,6 @@
 const baseRules = require('./rules/base.json');
 const typeScriptRules = require('./rules/typeScript.json');
+const tsxRules = require('./rules/tsx.json');
 
 /**
  * Base config.
@@ -27,6 +28,10 @@ const typeScript = {
         'prettier/@typescript-eslint'
     ],
     parser: '@typescript-eslint/parser',
+    env: {
+        ...base.env,
+        commonjs: true
+    },
     plugins: ['@typescript-eslint']
 };
 
@@ -37,6 +42,10 @@ const typeScript = {
  */
 const tsx = {
     ...typeScript,
+    rules: {
+        ...typeScript.rules,
+        ...tsxRules
+    },
     parserOptions: {
         ...typeScript.parserOptions,
         ecmaFeatures: {
