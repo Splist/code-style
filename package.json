@@ -1,0 +1,31 @@
+{
+    "author": {
+        "email": "me@jonahsnider.ninja",
+        "name": "Jonah Snider",
+        "url": "https://jonahsnider.ninja"
+    },
+    "devDependencies": {
+        "eslint": "^6.5.0",
+        "eslint-config-prettier": "^6.3.0",
+        "prettier": "^1.18.2"
+    },
+    "license": "Apache-2.0",
+    "main": "./src/eslint/index.js",
+    "name": "code-style",
+    "peerDependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.3.1",
+        "@typescript-eslint/parser": "^2.3.1",
+        "eslint": "^6.5.0",
+        "eslint-config-prettier": "^6.3.0",
+        "eslint-plugin-react": "^7.14.3",
+        "eslint-plugin-react-hooks": "^2.1.1",
+        "prettier": "^1.18.2"
+    },
+    "scripts": {
+        "autofix": "npm run lint --fix; npm run check-formatting --write",
+        "build": "tsc",
+        "check-formatting": "prettier --ignore-path .gitignore --check \"./**/*.{{j,t}{s,sx},flow,{{sc,c},le}ss,json,m{d,dx},{y,ya}ml}\"",
+        "lint": "eslint --ignore-path .gitignore ./**/*.js"
+    },
+    "version": "1.0.0"
+}
