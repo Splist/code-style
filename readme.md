@@ -105,5 +105,5 @@ If you want to show that you are using this code style you can use the following
 ### Markdown
 
 ```markdown
-[![style: splist](https://img.shields.io/badge/style-splist-730da7)](https://forge.splist.works/splist/prototype/tree/master/code-style)
+[![style: splist](https://img.shields.io/badge/style-splist-730da7)](https://github.com/Splist/code-style)
 ```
