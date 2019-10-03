@@ -9,7 +9,7 @@ const tsxRules = require('./rules/tsx.json');
 const base = {
     rules: baseRules,
     env: { node: true },
-    extends: ['eslint:recommended', 'prettier'],
+    extends: ['eslint:recommended', 'eslint-config-prettier'],
     parserOptions: { ecmaVersion: 2019 }
 };
 
@@ -25,7 +25,7 @@ const typeScript = {
         ...base.extends,
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
-        'prettier/@typescript-eslint'
+        'eslint-config-prettier/@typescript-eslint'
     ],
     parser: '@typescript-eslint/parser',
     env: {
@@ -59,7 +59,7 @@ const tsx = {
         es6: true
     },
     plugins: [...typeScript.plugins, 'react-hooks'],
-    extends: [...typeScript.extends, 'plugin:react/recommended', 'prettier/react'],
+    extends: [...typeScript.extends, 'plugin:react/recommended', 'eslint-config-prettier/react'],
     settings: {
         react: {
             version: 'detect'
