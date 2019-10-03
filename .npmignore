@@ -1,0 +1,13 @@
+# Configs for humans
+prettier.config.js
+.eslintrc.js
+.editorconfig
+
+# Don't commit the lock file since this is a library
+yarn.lock
+
+# Not needed
+.gitignore
+
+# Docs
+readme.md

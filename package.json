@@ -11,7 +11,7 @@
     },
     "license": "Apache-2.0",
     "main": "./src/index.js",
-    "name": "code-style",
+    "name": "@splist/code-style",
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "^2.3.1",
         "@typescript-eslint/parser": "^2.3.1",
