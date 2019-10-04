@@ -41,7 +41,7 @@ All configurations require the following dependencies:
 ```javascript
 // .eslintrc.js
 
-const { eslint } = require('code-style/eslint');
+const { eslint } = require('code-style');
 const { base } = eslint;
 
 module.exports = base;
