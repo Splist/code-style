@@ -1,6 +1,7 @@
 # Splist Code Style
 
 ![style: splist](https://img.shields.io/badge/style-splist-730da7)
+[![Build status](https://github.com/splist/code-style/workflows/Node.js%20CI/badge.svg)]((https://github.com/splist/code-style/actions?workflow=Node.js+CI))
 
 A set of configurations for several code formatting and linting tools to be used in all Splist projects.
 
