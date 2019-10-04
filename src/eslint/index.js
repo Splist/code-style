@@ -8,7 +8,7 @@ const tsxRules = require('./rules/tsx.json');
  */
 const base = {
     rules: baseRules,
-    env: { node: true },
+    env: { node: true, es6: true },
     extends: ['eslint:recommended', 'eslint-config-prettier'],
     parserOptions: { ecmaVersion: 2019 }
 };
